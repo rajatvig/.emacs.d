@@ -16,3 +16,6 @@
 [submodule "external/yaml-mode"]
 	path = external/yaml-mode
 	url = git://github.com/yoshiki/yaml-mode.git
+[submodule "external/markdown-mode"]
+	path = external/markdown-mode
+	url = git://github.com/emacsmirror/markdown-mode.git

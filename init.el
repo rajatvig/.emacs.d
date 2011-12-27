@@ -12,6 +12,7 @@
 (add-to-list 'load-path "~/.emacs.d/external/rinari")
 (add-to-list 'load-path "~/.emacs.d/external/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/external/yaml-mode")
+(add-to-list 'load-path "~/.emacs.d/external/markdown-mode")
 
 (package-initialize)
 
@@ -25,6 +26,7 @@
 (require 'rinari)
 (require 'yasnippet)
 (require 'yaml-mode)
+(require 'markdown-mode)
 
 (load "autoloads")
 (load "osx")
