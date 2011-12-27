@@ -3,12 +3,15 @@
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives
              '("tromey" . "http://tromey.com/elpa/") t)
+
 (add-to-list 'load-path "~/.emacs.d/ext")
+
 (add-to-list 'load-path "~/.emacs.d/external/rvm.el")
 (add-to-list 'load-path "~/.emacs.d/external/rspec-mode")
 (add-to-list 'load-path "~/.emacs.d/external/cucumber.el")
 (add-to-list 'load-path "~/.emacs.d/external/rinari")
 (add-to-list 'load-path "~/.emacs.d/external/yasnippet")
+(add-to-list 'load-path "~/.emacs.d/external/yaml-mode")
 
 (package-initialize)
 
@@ -21,6 +24,7 @@
 (require 'feature-mode)
 (require 'rinari)
 (require 'yasnippet)
+(require 'yaml-mode)
 
 (load "autoloads")
 (load "osx")
