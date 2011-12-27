@@ -19,3 +19,6 @@
 [submodule "external/markdown-mode"]
 	path = external/markdown-mode
 	url = git://github.com/emacsmirror/markdown-mode.git
+[submodule "external/magithub"]
+	path = external/magithub
+	url = git://github.com/nex3/magithub.git

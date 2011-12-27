@@ -13,6 +13,7 @@
 (add-to-list 'load-path "~/.emacs.d/external/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/external/yaml-mode")
 (add-to-list 'load-path "~/.emacs.d/external/markdown-mode")
+(add-to-list 'load-path "~/.emacs.d/external/magithub")
 
 (package-initialize)
 
@@ -27,6 +28,7 @@
 (require 'yasnippet)
 (require 'yaml-mode)
 (require 'markdown-mode)
+(require 'magithub)
 
 (load "autoloads")
 (load "osx")
