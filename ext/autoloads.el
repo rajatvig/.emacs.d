@@ -1,0 +1,12 @@
+(autoload 'puppet-mode "puppet-mode" "Major mode for editing puppet manifests")
+(autoload 'yaml-mode "yaml-mode" "major mode for yaml")
+
+(add-to-list 'auto-mode-alist '("\\.js" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.erb" . nxml-mode))
+(add-to-list 'auto-mode-alist '("\\Rakefile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\*.rake$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\*.template$" . haml-mode))
+(add-to-list 'auto-mode-alist '("\\*.scss$" . sass-mode))
+(add-to-list 'auto-mode-alist '("\\*.feature$", org-mode))
+(add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
