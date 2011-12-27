@@ -1,0 +1,12 @@
+[submodule "external/rvm.el"]
+	path = external/rvm.el
+	url = git://github.com/senny/rvm.el.git
+[submodule "external/rspec-mode"]
+	path = external/rspec-mode
+	url = git://github.com/pezra/rspec-mode.git
+[submodule "external/cucumber.el"]
+	path = external/cucumber.el
+	url = git://github.com/michaelklishin/cucumber.el.git
+[submodule "external/rinari"]
+	path = external/rinari
+	url = git://github.com/eschulte/rinari.git

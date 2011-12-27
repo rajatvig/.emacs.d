@@ -4,6 +4,10 @@
 (add-to-list 'package-archives
              '("tromey" . "http://tromey.com/elpa/") t)
 (add-to-list 'load-path "~/.emacs.d/ext")
+(add-to-list 'load-path "~/.emacs.d/external/rvm.el")
+(add-to-list 'load-path "~/.emacs.d/external/rspec-mode")
+(add-to-list 'load-path "~/.emacs.d/external/cucumber.el")
+(add-to-list 'load-path "~/.emacs.d/external/rinari")
 
 (package-initialize)
 
@@ -11,9 +15,14 @@
 
 (require 'puppet-mode)
 (require 'slim-mode)
+(require 'rvm)
+(require 'rspec-mode)
+(require 'feature-mode)
+(require 'rinari)
 
 (load "autoloads")
 (load "osx")
+(load "rvm-help")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
