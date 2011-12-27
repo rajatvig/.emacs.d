@@ -10,3 +10,6 @@
 [submodule "external/rinari"]
 	path = external/rinari
 	url = git://github.com/eschulte/rinari.git
+[submodule "external/yasnippet"]
+	path = external/yasnippet
+	url = git://github.com/capitaomorte/yasnippet.git

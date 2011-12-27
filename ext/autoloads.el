@@ -11,3 +11,5 @@
 (add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
+
+(yas/global-mode 1)

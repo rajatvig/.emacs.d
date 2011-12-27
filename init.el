@@ -8,6 +8,7 @@
 (add-to-list 'load-path "~/.emacs.d/external/rspec-mode")
 (add-to-list 'load-path "~/.emacs.d/external/cucumber.el")
 (add-to-list 'load-path "~/.emacs.d/external/rinari")
+(add-to-list 'load-path "~/.emacs.d/external/yasnippet")
 
 (package-initialize)
 
@@ -19,6 +20,7 @@
 (require 'rspec-mode)
 (require 'feature-mode)
 (require 'rinari)
+(require 'yasnippet)
 
 (load "autoloads")
 (load "osx")
