@@ -14,11 +14,12 @@
 (add-to-list 'load-path "~/.emacs.d/external/yaml-mode")
 (add-to-list 'load-path "~/.emacs.d/external/markdown-mode")
 (add-to-list 'load-path "~/.emacs.d/external/magithub")
-
+(add-to-list 'load-path "~/.emacs.d/external/mode-compile")
 (package-initialize)
 
 (load-theme 'wombat)
 
+(require 'mode-compile)
 (require 'puppet-mode)
 (require 'slim-mode)
 (require 'rvm)
@@ -59,7 +60,8 @@
 
 (setq org-startup-indented t)
 
-(set-default-font "Terminus-11")
+(set-default-font "Monaco-10")
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
