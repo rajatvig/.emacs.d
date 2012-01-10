@@ -54,13 +54,15 @@
  '(safe-local-variable-values (quote ((encoding . utf-8) (ruby-compilation-executable . "ruby") (ruby-compilation-executable . "ruby1.8") (ruby-compilation-executable . "ruby1.9") (ruby-compilation-executable . "rbx") (ruby-compilation-executable . "jruby") (whitespace-line-column . 80) (lexical-binding . t))))
  '(setq tab-width t)
  '(setq-default c-basic-offset)
+ '(show-paren-mode t)
  '(standard-indent 2)
  '(tab-stop-list (quote (2 4 6 8 10 12 14 16 18 20 22 24 26 28 30)))
- '(tab-width 2))
+ '(tab-width 2)
+ '(tool-bar-mode nil))
 
 (setq org-startup-indented t)
 
-(set-default-font "Monaco-10")
+(set-default-font "Monaco-9")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -68,3 +70,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
