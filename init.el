@@ -50,6 +50,7 @@
  '(js2-bounce-indent-p t)
  '(js2-cleanup-whitespace t)
  '(js2-indent-on-enter-key t)
+ '(rspec-use-rvm t)
  '(ruby-comment-column 96)
  '(safe-local-variable-values (quote ((encoding . utf-8) (ruby-compilation-executable . "ruby") (ruby-compilation-executable . "ruby1.8") (ruby-compilation-executable . "ruby1.9") (ruby-compilation-executable . "rbx") (ruby-compilation-executable . "jruby") (whitespace-line-column . 80) (lexical-binding . t))))
  '(setq tab-width t)
