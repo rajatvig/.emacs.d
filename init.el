@@ -1,3 +1,11 @@
+(push "/usr/local/bin" exec-path)
+
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+(setq-default tab-width 2)
+(setq-default indent-tabs-mode nil)
+(setq inhibit-startup-message t)
+
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
