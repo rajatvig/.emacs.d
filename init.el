@@ -25,11 +25,8 @@
 (add-to-list 'load-path "~/.emacs.d/external/mode-compile")
 (package-initialize)
 
-(load-theme 'wombat)
-
 (require 'mode-compile)
 (require 'puppet-mode)
-(require 'slim-mode)
 (require 'rvm)
 (require 'rspec-mode)
 (require 'feature-mode)
@@ -38,10 +35,13 @@
 (require 'yaml-mode)
 (require 'markdown-mode)
 (require 'magithub)
+(require 'autopair)
 
 (load "autoloads")
 (load "osx")
 (load "rvm-help")
+
+(load-theme 'wombat)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

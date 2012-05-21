@@ -13,4 +13,6 @@
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 (add-to-list 'auto-mode-alist '("\.md$" . markdown-mode))
 
+(yas/initialize)
 (yas/global-mode 1)
+(autopair-global-mode)
