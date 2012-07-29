@@ -2,6 +2,7 @@
 (autoload 'yaml-mode "yaml-mode" "major mode for yaml")
 
 (add-to-list 'auto-mode-alist '("\\.js" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.erl" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.erb" . nxml-mode))
 (add-to-list 'auto-mode-alist '("\\Rakefile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\*.rake$" . ruby-mode))
