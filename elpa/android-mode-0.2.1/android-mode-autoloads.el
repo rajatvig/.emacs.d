@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (android-mode) "android-mode" "android-mode.el"
-;;;;;;  (20349 63606))
+;;;;;;  (20501 37624))
 ;;; Generated autoloads from android-mode.el
 
 (autoload 'android-mode "android-mode" "\
@@ -14,7 +14,7 @@ Android application development minor mode.
 
 ;;;***
 
-;;;### (autoloads nil nil ("android-mode-pkg.el") (20349 63606 884854))
+;;;### (autoloads nil nil ("android-mode-pkg.el") (20501 37625 279586))
 
 ;;;***
 
