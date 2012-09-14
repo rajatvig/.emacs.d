@@ -62,7 +62,7 @@
  '(js2-indent-on-enter-key t)
  '(rspec-use-rvm t)
  '(ruby-comment-column 96)
- '(safe-local-variable-values (quote ((encoding . utf-8) (ruby-compilation-executable . "ruby") (ruby-compilation-executable . "ruby1.8") (ruby-compilation-executable . "ruby1.9") (ruby-compilation-executable . "rbx") (ruby-compilation-executable . "jruby") (whitespace-line-column . 80) (lexical-binding . t))))
+ '(safe-local-variable-values (quote ((erlang-indent-level . 4) (encoding . utf-8) (ruby-compilation-executable . "ruby") (ruby-compilation-executable . "ruby1.8") (ruby-compilation-executable . "ruby1.9") (ruby-compilation-executable . "rbx") (ruby-compilation-executable . "jruby") (whitespace-line-column . 80) (lexical-binding . t))))
  '(setq tab-width t)
  '(setq-default c-basic-offset)
  '(show-paren-mode t)
