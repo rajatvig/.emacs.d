@@ -17,7 +17,7 @@
 (add-to-list 'load-path "~/.emacs.d/external/rvm.el")
 (add-to-list 'load-path "~/.emacs.d/external/rspec-mode")
 (add-to-list 'load-path "~/.emacs.d/external/cucumber.el")
-(add-to-list 'load-path "~/.emacs.d/external/rinari")
+;;(add-to-list 'load-path "~/.emacs.d/external/rinari")
 (add-to-list 'load-path "~/.emacs.d/external/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/external/yaml-mode")
 (add-to-list 'load-path "~/.emacs.d/external/markdown-mode")
@@ -30,7 +30,7 @@
 (require 'rvm)
 (require 'rspec-mode)
 (require 'feature-mode)
-(require 'rinari)
+;;(require 'rinari)
 (require 'yasnippet)
 (require 'yaml-mode)
 (require 'markdown-mode)
@@ -83,3 +83,7 @@
  '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 85 :width normal :foundry "apple" :family "Droid Sans Mono")))))
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;;(yas/initialize)
+;;(yas/global-mode 1)
+(autopair-global-mode)
