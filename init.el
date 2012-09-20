@@ -41,7 +41,7 @@
 (load "osx")
 (load "rvm-help")
 
-(load-theme 'tango-dark)
+(load-theme 'wombat)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
