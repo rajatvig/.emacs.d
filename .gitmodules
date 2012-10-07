@@ -25,3 +25,9 @@
 [submodule "external/mode-compile"]
 	path = external/mode-compile
 	url = git://github.com/emacsmirror/mode-compile.git
+[submodule "external/perspective-el"]
+	path = external/perspective-el
+	url = git://github.com/fred-o/perspective-el.git
+[submodule "external/auto-complete"]
+	path = external/auto-complete
+	url = git://github.com/auto-complete/auto-complete.git

@@ -14,28 +14,19 @@
 
 (add-to-list 'load-path "~/.emacs.d/ext")
 
+(add-to-list 'load-path "~/.emacs.d/external/mode-compile")
 (add-to-list 'load-path "~/.emacs.d/external/rvm.el")
 (add-to-list 'load-path "~/.emacs.d/external/rspec-mode")
 (add-to-list 'load-path "~/.emacs.d/external/cucumber.el")
-;;(add-to-list 'load-path "~/.emacs.d/external/rinari")
+(add-to-list 'load-path "~/.emacs.d/external/rinari")
 (add-to-list 'load-path "~/.emacs.d/external/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/external/yaml-mode")
 (add-to-list 'load-path "~/.emacs.d/external/markdown-mode")
 (add-to-list 'load-path "~/.emacs.d/external/magithub")
-(add-to-list 'load-path "~/.emacs.d/external/mode-compile")
-(package-initialize)
+(add-to-list 'load-path "~/.emacs.d/external/auto-complete")
+(add-to-list 'load-path "~/.emacs.d/external/perspective-el")
 
-(require 'mode-compile)
-(require 'puppet-mode)
-(require 'rvm)
-(require 'rspec-mode)
-(require 'feature-mode)
-;;(require 'rinari)
-(require 'yasnippet)
-(require 'yaml-mode)
-(require 'markdown-mode)
-(require 'magithub)
-(require 'autopair)
+(package-initialize)
 
 (load "autoloads")
 (load "osx")
@@ -84,6 +75,20 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+(require 'mode-compile)
+(require 'puppet-mode)
+(require 'rvm)
+(require 'rspec-mode)
+(require 'feature-mode)
+(require 'yasnippet)
+(require 'yaml-mode)
+(require 'markdown-mode)
+(require 'magithub)
+(require 'autopair)
+
+(autopair-global-mode)
+
+(require 'rinari)
+
 ;;(yas/initialize)
 ;;(yas/global-mode 1)
-(autopair-global-mode)
