@@ -25,6 +25,7 @@
 (add-to-list 'load-path "~/.emacs.d/external/magithub")
 (add-to-list 'load-path "~/.emacs.d/external/auto-complete")
 (add-to-list 'load-path "~/.emacs.d/external/perspective-el")
+(add-to-list 'load-path "~/.emacs.d/external/jump.el")
 
 (package-initialize)
 
@@ -76,6 +77,7 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (require 'mode-compile)
+(require 'jump)
 (require 'puppet-mode)
 (require 'rvm)
 (require 'rspec-mode)
@@ -90,5 +92,10 @@
 
 (require 'rinari)
 
+(setq yas/snippet-dirs "~/.emacs.d/external/yasnippet/snippets")
+
+(yas/load-directory yas/snippet-dirs)
+
 ;;(yas/initialize)
-;;(yas/global-mode 1)
+
+(yas/global-mode 1)

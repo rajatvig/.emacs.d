@@ -31,3 +31,6 @@
 [submodule "external/auto-complete"]
 	path = external/auto-complete
 	url = git://github.com/auto-complete/auto-complete.git
+[submodule "external/jump.el"]
+	path = external/jump.el
+	url = git://github.com/eschulte/jump.el.git
