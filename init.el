@@ -27,6 +27,7 @@
 (add-to-list 'load-path "~/.emacs.d/external/perspective-el")
 (add-to-list 'load-path "~/.emacs.d/external/jump.el")
 (add-to-list 'load-path "~/.emacs.d/external/smart-tab")
+(add-to-list 'load-path "~/.emacs.d/external/emacs-slim")
 
 (package-initialize)
 
@@ -88,6 +89,7 @@
 (require 'markdown-mode)
 (require 'magithub)
 (require 'autopair)
+(require 'slim-mode)
 
 (autopair-global-mode)
 

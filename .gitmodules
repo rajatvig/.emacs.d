@@ -37,3 +37,6 @@
 [submodule "external/smart-tab"]
 	path = external/smart-tab
 	url = git://github.com/genehack/smart-tab.git
+[submodule "external/emacs-slim"]
+	path = external/emacs-slim
+	url = git://github.com/minad/emacs-slim.git
