@@ -26,6 +26,7 @@
 (add-to-list 'load-path "~/.emacs.d/external/auto-complete")
 (add-to-list 'load-path "~/.emacs.d/external/perspective-el")
 (add-to-list 'load-path "~/.emacs.d/external/jump.el")
+(add-to-list 'load-path "~/.emacs.d/external/smart-tab")
 
 (package-initialize)
 
@@ -99,3 +100,6 @@
 ;;(yas/initialize)
 
 (yas/global-mode 1)
+
+(require 'smart-tab)
+(global-smart-tab-mode 1)

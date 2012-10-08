@@ -34,3 +34,6 @@
 [submodule "external/jump.el"]
 	path = external/jump.el
 	url = git://github.com/eschulte/jump.el.git
+[submodule "external/smart-tab"]
+	path = external/smart-tab
+	url = git://github.com/genehack/smart-tab.git
