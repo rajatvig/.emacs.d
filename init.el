@@ -28,6 +28,7 @@
 (add-to-list 'load-path "~/.emacs.d/external/jump.el")
 (add-to-list 'load-path "~/.emacs.d/external/smart-tab")
 (add-to-list 'load-path "~/.emacs.d/external/emacs-slim")
+(add-to-list 'load-path "~/.emacs.d/external/maxframe.el")
 
 (package-initialize)
 
@@ -105,3 +106,6 @@
 
 (require 'smart-tab)
 (global-smart-tab-mode 1)
+
+(require 'maxframe)
+(add-hook 'window-setup-hook 'maximize-frame t)
