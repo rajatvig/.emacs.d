@@ -57,14 +57,15 @@
  '(js2-indent-on-enter-key t)
  '(rspec-use-rvm t)
  '(ruby-comment-column 96)
- '(safe-local-variable-values (quote ((erlang-indent-level . 4) (encoding . utf-8) (ruby-compilation-executable . "ruby") (ruby-compilation-executable . "ruby1.8") (ruby-compilation-executable . "ruby1.9") (ruby-compilation-executable . "rbx") (ruby-compilation-executable . "jruby") (whitespace-line-column . 80) (lexical-binding . t))))
+ '(safe-local-variable-values (quote ((enconing . utf-8) (erlang-indent-level . 4) (encoding . utf-8) (ruby-compilation-executable . "ruby") (ruby-compilation-executable . "ruby1.8") (ruby-compilation-executable . "ruby1.9") (ruby-compilation-executable . "rbx") (ruby-compilation-executable . "jruby") (whitespace-line-column . 80) (lexical-binding . t))))
  '(setq tab-width t)
  '(setq-default c-basic-offset)
  '(show-paren-mode t)
  '(standard-indent 2)
  '(tab-stop-list (quote (2 4 6 8 10 12 14 16 18 20 22 24 26 28 30)))
  '(tab-width 2)
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(workgroups-mode t))
 
 (setq org-startup-indented t)
 
@@ -75,10 +76,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 85 :width normal :foundry "apple" :family "Droid Sans Mono")))))
+ '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 95 :width normal :foundry "apple" :family "Monaco")))))
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-
 (require 'mode-compile)
 (require 'jump)
 (require 'puppet-mode)
@@ -91,7 +91,7 @@
 (require 'magithub)
 (require 'autopair)
 (require 'slim-mode)
-
+(require 'workgroups)
 (autopair-global-mode)
 
 (require 'rinari)
