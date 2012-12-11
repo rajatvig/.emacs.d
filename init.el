@@ -68,7 +68,7 @@
 
 (setq org-startup-indented t)
 
-(set-default-font "Monaco-9")
+(set-default-font "Droid Sans Mono-9")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
