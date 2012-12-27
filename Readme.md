@@ -1,6 +1,6 @@
-.emacs.d for the Emacs
+My .emacs.d for Emacs 24.x
 
-Mostly used under Mac OS X and Linux.
+I mostly used it with Mac OS X and Linux. Works mostly.
 
 To use
 
@@ -8,12 +8,11 @@ To use
 
 `git submodule update`
 
-Submit/Fork as needed
 
 To run Emacs Daemon on OS X, write in .zshrc
 
 `alias ed=/Applications/Emacs.app/Contents/MacOS/Emacs --daemon`
 
-`e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -n -a= -c'`
+`alias e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -n -a= -c'`
 
-Run ed in a terminal and then write e <file> anywhere to profit
+Run `ed` in a terminal and then write `e <file>` anywhere to profit
