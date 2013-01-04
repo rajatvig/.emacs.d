@@ -39,7 +39,7 @@
 	url = git://github.com/genehack/smart-tab.git
 [submodule "external/emacs-slim"]
 	path = external/emacs-slim
-	url = git://github.com/minad/emacs-slim.git
+	url = git://github.com/slim-template/emacs-slim.git
 [submodule "external/maxframe.el"]
 	path = external/maxframe.el
 	url = git://github.com/rmm5t/maxframe.el.git
