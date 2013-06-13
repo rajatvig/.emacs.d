@@ -23,8 +23,8 @@
 (add-to-list 'load-path "~/.emacs.d/external/yaml-mode")
 (add-to-list 'load-path "~/.emacs.d/external/markdown-mode")
 (add-to-list 'load-path "~/.emacs.d/external/magithub")
+;;(add-to-list 'load-path "~/.emacs.d/external/edts")
 (add-to-list 'load-path "~/.emacs.d/external/auto-complete")
-(add-to-list 'load-path "~/.emacs.d/external/perspective-el")
 (add-to-list 'load-path "~/.emacs.d/external/jump.el")
 (add-to-list 'load-path "~/.emacs.d/external/smart-tab")
 (add-to-list 'load-path "~/.emacs.d/external/emacs-slim")
@@ -91,10 +91,10 @@
 (require 'magithub)
 (require 'autopair)
 (require 'slim-mode)
+(require 'rinari)
+;;(require 'edts-start)
 
 (autopair-global-mode)
-
-(require 'rinari)
 
 (setq yas/snippet-dirs "~/.emacs.d/external/yasnippet/snippets")
 
