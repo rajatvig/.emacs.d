@@ -1,13 +1,21 @@
 My .emacs.d for Emacs 24.x
 
 I mostly used it with Mac OS X and Linux. Works mostly.
+I use Droid Sans Mono with size set to 9.
 
 To use
+
+`git clone https://github.com/rajatvig/.emacs.d.git ~/.emacs.d`
+
+`cd ~/.emacs.d`
 
 `git submodule init`
 
 `git submodule update`
 
+`cd external\ensime`
+
+`sbt stage`
 
 To run Emacs Daemon on OS X, write in .zshrc
 
