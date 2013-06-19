@@ -43,3 +43,6 @@
 [submodule "external/edts"]
 	path = external/edts
 	url = git://github.com/tjarvstrand/edts.git
+[submodule "external/ensime"]
+	path = external/ensime
+	url = git://github.com/aemoncannon/ensime.git

@@ -29,6 +29,7 @@
 (add-to-list 'load-path "~/.emacs.d/external/smart-tab")
 (add-to-list 'load-path "~/.emacs.d/external/emacs-slim")
 (add-to-list 'load-path "~/.emacs.d/external/maxframe.el")
+(add-to-list 'load-path "~/.emacs.d/external/ensime/dist/elisp/")
 
 (package-initialize)
 
@@ -92,6 +93,7 @@
 (require 'autopair)
 (require 'slim-mode)
 (require 'rinari)
+(require 'ensime)
 ;;(require 'edts-start)
 
 (autopair-global-mode)

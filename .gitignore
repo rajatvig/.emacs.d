@@ -6,3 +6,4 @@ tramp
 url/
 elpa/**/*.elc
 elpa/archives/**
+eshell/**
