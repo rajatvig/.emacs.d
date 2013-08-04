@@ -46,6 +46,7 @@
  '(c-basic-offset 2)
  '(display-battery-mode t)
  '(display-time-mode t)
+ '(feature-use-rvm t)
  '(ido-everywhere t)
  '(ido-mode (quote both) nil (ido))
  '(indent-tabs-mode t)
