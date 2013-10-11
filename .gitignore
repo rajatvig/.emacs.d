@@ -4,6 +4,6 @@ backups/
 places
 tramp
 url/
-elpa/**/*.elc
+**/*.elc
 elpa/archives/**
 eshell/**
