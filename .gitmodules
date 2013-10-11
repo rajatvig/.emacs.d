@@ -7,9 +7,6 @@
 [submodule "external/cucumber.el"]
 	path = external/cucumber.el
 	url = git://github.com/michaelklishin/cucumber.el.git
-[submodule "external/rinari"]
-	path = external/rinari
-	url = git://github.com/eschulte/rinari.git
 [submodule "external/yasnippet"]
 	path = external/yasnippet
 	url = git://github.com/capitaomorte/yasnippet.git
@@ -28,9 +25,6 @@
 [submodule "external/auto-complete"]
 	path = external/auto-complete
 	url = git://github.com/auto-complete/auto-complete.git
-[submodule "external/jump.el"]
-	path = external/jump.el
-	url = git://github.com/eschulte/jump.el.git
 [submodule "external/smart-tab"]
 	path = external/smart-tab
 	url = git://github.com/genehack/smart-tab.git
