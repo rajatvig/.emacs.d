@@ -13,3 +13,7 @@
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 (add-to-list 'auto-mode-alist '("\.md$" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\.sbt$" . scala-mode))
+(add-to-list 'auto-mode-alist '("\.gradle$" . groovy-mode))
+
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)

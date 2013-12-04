@@ -1,2 +1,2 @@
 (add-hook 'ruby-mode-hook
-          (lambda () (rvm-activate-corresponding-ruby)))
+          (lambda () (rvm-use-corresponding-ruby)))

@@ -18,17 +18,17 @@
 (add-to-list 'load-path "~/.emacs.d/external/rvm.el")
 (add-to-list 'load-path "~/.emacs.d/external/rspec-mode")
 (add-to-list 'load-path "~/.emacs.d/external/cucumber.el")
-(add-to-list 'load-path "~/.emacs.d/external/rinari")
+;;(add-to-list 'load-path "~/.emacs.d/external/rinari")
 (add-to-list 'load-path "~/.emacs.d/external/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/external/yaml-mode")
 (add-to-list 'load-path "~/.emacs.d/external/markdown-mode")
 (add-to-list 'load-path "~/.emacs.d/external/magithub")
+;;(add-to-list 'load-path "~/.emacs.d/external/edts")
 (add-to-list 'load-path "~/.emacs.d/external/auto-complete")
-(add-to-list 'load-path "~/.emacs.d/external/perspective-el")
-(add-to-list 'load-path "~/.emacs.d/external/jump.el")
 (add-to-list 'load-path "~/.emacs.d/external/smart-tab")
 (add-to-list 'load-path "~/.emacs.d/external/emacs-slim")
 (add-to-list 'load-path "~/.emacs.d/external/maxframe.el")
+(add-to-list 'load-path "~/.emacs.d/external/ensime/dist/elisp/")
 
 (package-initialize)
 
@@ -70,7 +70,7 @@
 
 (setq org-startup-indented t)
 
-(set-default-font "Monaco-9")
+(set-default-font "Droid Sans Mono-9")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -93,9 +93,12 @@
 (require 'autopair)
 (require 'slim-mode)
 (require 'workgroups)
-(autopair-global-mode)
+;;(require 'rinari)
+(require 'ensime)
+;;(require 'edts-start)
 
-(require 'rinari)
+>>>>>>> upstream/master
+(autopair-global-mode)
 
 (setq yas/snippet-dirs "~/.emacs.d/external/yasnippet/snippets")
 
