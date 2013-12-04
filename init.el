@@ -91,10 +91,10 @@
 (require 'markdown-mode)
 (require 'magithub)
 (require 'autopair)
-(require 'slim-mode)
+;;(require 'slim-mode)
 (require 'workgroups)
 ;;(require 'rinari)
-(require 'ensime)
+;;(require 'ensime)
 ;;(require 'edts-start)
 
 (autopair-global-mode)
