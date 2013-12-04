@@ -97,7 +97,6 @@
 (require 'ensime)
 ;;(require 'edts-start)
 
->>>>>>> upstream/master
 (autopair-global-mode)
 
 (setq yas/snippet-dirs "~/.emacs.d/external/yasnippet/snippets")
