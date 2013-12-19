@@ -1,4 +1,4 @@
-(push "/usr/local/bin" exec-path)
+;;(push "/usr/local/bin" exec-path)
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
@@ -14,11 +14,9 @@
 
 (add-to-list 'load-path "~/.emacs.d/ext")
 
-(add-to-list 'load-path "~/.emacs.d/external/mode-compile")
 (add-to-list 'load-path "~/.emacs.d/external/rvm.el")
 (add-to-list 'load-path "~/.emacs.d/external/rspec-mode")
 (add-to-list 'load-path "~/.emacs.d/external/cucumber.el")
-;;(add-to-list 'load-path "~/.emacs.d/external/rinari")
 (add-to-list 'load-path "~/.emacs.d/external/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/external/yaml-mode")
 (add-to-list 'load-path "~/.emacs.d/external/markdown-mode")
@@ -78,10 +76,8 @@
  '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 85 :width normal :foundry "apple" :family "Aurulent Sans Mono")))))
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-(add-hook 'write-file-hooks (lambda () (untabify (point-min) (point-max)))')
+(add-hook 'write-file-hooks (lambda () (untabify (point-min) (point-max))))
 
-(require 'mode-compile)
-(require 'jump)
 (require 'puppet-mode)
 (require 'rvm)
 (require 'rspec-mode)
@@ -92,7 +88,6 @@
 (require 'magithub)
 (require 'autopair)
 (require 'slim-mode)
-;;(require 'rinari)
 (require 'ensime)
 ;;(require 'edts-start)
 
