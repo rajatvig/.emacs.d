@@ -1,3 +1,10 @@
+;; fix the PATH variable
+(defun set-exec-path-from-shell-PATH ()
+  (let ((path-from-shell (shell-command-to-string "$SHELL -i -c 'echo $PATH'")))
+    (setenv "PATH" path-from-shell)
+    (setq exec-path (split-string path-from-shell path-separator))))
+
+(when window-system (set-exec-path-from-shell-PATH))
 ;;(push "/usr/local/bin" exec-path)
 
 (setq make-backup-files nil)
@@ -34,7 +41,9 @@
 (load "osx")
 (load "rvm-help")
 
-(load-theme 'wombat)
+(require 'color-theme-sanityinc-tomorrow)
+
+;;(load-theme 'wombat)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -76,7 +85,7 @@
  '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 85 :width normal :foundry "apple" :family "Aurulent Sans Mono")))))
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-(add-hook 'write-file-hooks (lambda () (untabify (point-min) (point-max))))
+;;(add-hook 'write-file-hooks (lambda () (untabify (point-min) (point-max))))
 
 (require 'puppet-mode)
 (require 'rvm)
