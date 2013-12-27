@@ -10,7 +10,7 @@
 [submodule "external/rvm.el"]
 	path = external/rvm.el
 	url = git://github.com/senny/rvm.el.git
-[submodule "external/rspec-mod"]
+[submodule "external/rspec-mode"]
 	path = external/rspec-mode
 	url = git://github.com/pezra/rspec-mode.git
 [submodule "external/cucumber.el"]
