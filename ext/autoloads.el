@@ -17,3 +17,20 @@
 (add-to-list 'auto-mode-alist '("\.gradle$" . groovy-mode))
 
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+
+;; Paredit
+(add-hook 'clojure-mode-hook 'paredit-mode)
+(add-hook 'nrepl-mode-hook 'paredit-mode)
+
+;; Highlight-parentheses
+(require 'highlight-parentheses)
+(define-globalized-minor-mode global-highlight-parentheses-mode
+  highlight-parentheses-mode
+  (lambda ()
+    (highlight-parentheses-mode t)))
+
+(add-hook 'clojure-mode-hook 'highlight-parentheses-mode)
+(add-hook 'clojure-mode-hook 'cider-mode)
+
+(setq nrepl-hide-special-buffers t)
+;;(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)

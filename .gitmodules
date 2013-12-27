@@ -19,9 +19,6 @@
 [submodule "external/magithub"]
 	path = external/magithub
 	url = git://github.com/nex3/magithub.git
-[submodule "external/mode-compile"]
-	path = external/mode-compile
-	url = git://github.com/emacsmirror/mode-compile.git
 [submodule "external/auto-complete"]
 	path = external/auto-complete
 	url = git://github.com/auto-complete/auto-complete.git
