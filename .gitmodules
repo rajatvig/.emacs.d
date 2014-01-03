@@ -1,3 +1,12 @@
+[submodule "external/rinari"]
+	path = external/rinari
+	url = git://github.com/eschulte/rinari.git
+[submodule "external/perspective-el"]
+	path = external/perspective-el
+	url = git://github.com/nex3/perspective-el.git
+[submodule "external/jump.el"]
+	path = external/jump.el
+	url = git://github.com/eschulte/jump.el.git
 [submodule "external/rvm.el"]
 	path = external/rvm.el
 	url = git://github.com/senny/rvm.el.git

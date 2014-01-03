@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (mo-git-blame-current mo-git-blame-file) "mo-git-blame"
-;;;;;;  "mo-git-blame.el" (21153 8389 0 0))
+;;;;;;  "mo-git-blame.el" (20635 23282))
 ;;; Generated autoloads from mo-git-blame.el
 
 (autoload 'mo-git-blame-file "mo-git-blame" "\
@@ -33,8 +33,7 @@ Calls `mo-git-blame-file' for HEAD for the current buffer.
 
 ;;;***
 
-;;;### (autoloads nil nil ("mo-git-blame-pkg.el") (21153 8389 169584
-;;;;;;  0))
+;;;### (autoloads nil nil ("mo-git-blame-pkg.el") (20635 23282 384918))
 
 ;;;***
 
