@@ -41,7 +41,6 @@
 (require 'ensime)
 ;;(require 'edts-start)
 (require 'textmate)
-(textmate-mode)
 
 (autoload 'puppet-mode "puppet-mode" "Major mode for editing puppet manifests")
 (autoload 'yaml-mode "yaml-mode" "major mode for yaml")

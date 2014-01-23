@@ -36,3 +36,19 @@
 (add-hook 'window-setup-hook 'maximize-frame t)
 
 (windmove-default-keybindings)
+
+;; Don't ever make audible sounds.
+(setq visible-bell 't)
+;; Don't flash either
+(setq ring-bell-function 'ignore)
+
+(line-number-mode t)
+(column-number-mode t)
+(size-indication-mode t)
+
+(setq inhibit-startup-message t)
+
+(textmate-mode)
+(global-linum-mode 1)
+
+(global-hl-line-mode 1)
