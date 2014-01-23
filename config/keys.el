@@ -11,9 +11,8 @@
 (global-unset-key (kbd "C-z"))
 
 ;; Font size
-(define-key global-map (kbd "C-+") 'text-scale-increase)
-(define-key global-map (kbd "C--") 'text-scale-decrease)
-
+(define-key global-map (kbd "s-+") 'text-scale-increase)
+(define-key global-map (kbd "s--") 'text-scale-decrease)
 
 ;; f3 in minibuf inserts active buffer's filename
 ;; http://stackoverflow.com/questions/455345/in-emacs-how-to-insert-file-name-in-shell-command
