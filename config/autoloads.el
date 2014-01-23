@@ -1,3 +1,17 @@
+(add-to-list 'load-path "~/.emacs.d/external/rvm.el")
+(add-to-list 'load-path "~/.emacs.d/external/rspec-mode")
+(add-to-list 'load-path "~/.emacs.d/external/cucumber.el")
+(add-to-list 'load-path "~/.emacs.d/external/yasnippet")
+(add-to-list 'load-path "~/.emacs.d/external/yaml-mode")
+(add-to-list 'load-path "~/.emacs.d/external/markdown-mode")
+(add-to-list 'load-path "~/.emacs.d/external/magithub")
+;;(add-to-list 'load-path "~/.emacs.d/external/edts")
+(add-to-list 'load-path "~/.emacs.d/external/auto-complete")
+(add-to-list 'load-path "~/.emacs.d/external/smart-tab")
+(add-to-list 'load-path "~/.emacs.d/external/emacs-slim")
+(add-to-list 'load-path "~/.emacs.d/external/maxframe.el")
+(add-to-list 'load-path "~/.emacs.d/external/ensime/dist/elisp/")
+
 (autoload 'puppet-mode "puppet-mode" "Major mode for editing puppet manifests")
 (autoload 'yaml-mode "yaml-mode" "major mode for yaml")
 
@@ -15,22 +29,3 @@
 (add-to-list 'auto-mode-alist '("\.md$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\.sbt$" . scala-mode))
 (add-to-list 'auto-mode-alist '("\.gradle$" . groovy-mode))
-
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-
-;; Paredit
-(add-hook 'clojure-mode-hook 'paredit-mode)
-(add-hook 'nrepl-mode-hook 'paredit-mode)
-
-;; Highlight-parentheses
-(require 'highlight-parentheses)
-(define-globalized-minor-mode global-highlight-parentheses-mode
-  highlight-parentheses-mode
-  (lambda ()
-    (highlight-parentheses-mode t)))
-
-(add-hook 'clojure-mode-hook 'highlight-parentheses-mode)
-(add-hook 'clojure-mode-hook 'cider-mode)
-
-(setq nrepl-hide-special-buffers t)
-;;(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
