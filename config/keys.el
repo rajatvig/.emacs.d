@@ -33,7 +33,6 @@
 (global-set-key [delete] 'delete-forward-char)
 
 (global-set-key (kbd "C-/") 'comment-dwim)
-(global-set-key (kbd "s-/") 'comment-or-uncomment-region)
 
 ;; Nagivation
 (global-set-key (kbd "C-l") 'goto-line)
