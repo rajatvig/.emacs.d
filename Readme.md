@@ -1,26 +1,27 @@
-My .emacs.d for Emacs 24.x
+Custom Emacs 24 configuration.
 
-I mostly used it with Mac OS X and Linux. Works mostly.
-I use Droid Sans Mono with size set to 9.
+Mostly used under with Mac OS X and Linux. Use Consolas as the default Font.
 
 To use
 
-`git clone https://github.com/rajatvig/.emacs.d.git ~/.emacs.d`
-
-`cd ~/.emacs.d`
-
-`git submodule init`
-
-`git submodule update`
-
-`cd external\ensime`
-
-`sbt stage`
+```
+git clone https://github.com/rajatvig/.emacs.d.git ~/.emacs.d
+cd ~/.emacs.d
+git submodule init
+git submodule update
+git submodule foreach git submodule init
+git submodule foreach git submodule update
+cd external\ensime
+sbt stage
+cd ../..
+cd external\auto-complete
+make byte-compile
+```
 
 To run Emacs Daemon on OS X, write in .zshrc
 
-`alias ed=/Applications/Emacs.app/Contents/MacOS/Emacs --daemon`
+```
+alias e='emacsclient -n -a= -c'
+```
 
-`alias e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -n -a= -c'`
-
-Run `ed` in a terminal and then write `e <file>` anywhere to profit
+`e <file>` anywhere to profit
