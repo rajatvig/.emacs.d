@@ -52,3 +52,8 @@
 (global-linum-mode 1)
 
 (global-hl-line-mode 1)
+
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/external/auto-complete/dict")
+(require 'auto-complete-config)
+(ac-config-default)
+(auto-complete-mode-maybe)
