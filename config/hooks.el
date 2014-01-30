@@ -57,3 +57,5 @@
 (require 'auto-complete-config)
 (ac-config-default)
 (auto-complete-mode-maybe)
+
+(define-key yas-minor-mode-map (kbd "M-RET") 'yas-expand)
