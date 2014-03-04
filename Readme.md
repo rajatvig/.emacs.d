@@ -16,6 +16,10 @@ sbt stage
 cd ../..
 cd external\auto-complete
 make byte-compile
+cd ../..
+cd external\edts
+make
+cd ../..
 ```
 
 To run Emacs Daemon on OS X, write in .zshrc
