@@ -1,4 +1,5 @@
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+(add-hook 'js2-mode-hook 'ac-js2-mode)
 
 ;; Paredit
 (add-hook 'clojure-mode-hook 'paredit-mode)
