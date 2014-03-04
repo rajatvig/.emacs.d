@@ -1,42 +1,12 @@
-[submodule "external/rinari"]
-	path = external/rinari
-	url = git://github.com/eschulte/rinari.git
-[submodule "external/jump.el"]
-	path = external/jump.el
-	url = git://github.com/eschulte/jump.el.git
-[submodule "external/rvm.el"]
-	path = external/rvm.el
-	url = git://github.com/senny/rvm.el.git
-[submodule "external/rspec-mode"]
-	path = external/rspec-mode
-	url = git://github.com/pezra/rspec-mode.git
-[submodule "external/cucumber.el"]
-	path = external/cucumber.el
-	url = git://github.com/michaelklishin/cucumber.el.git
 [submodule "external/yasnippet"]
 	path = external/yasnippet
 	url = git://github.com/capitaomorte/yasnippet.git
-[submodule "external/yaml-mode"]
-	path = external/yaml-mode
-	url = git://github.com/yoshiki/yaml-mode.git
-[submodule "external/markdown-mode"]
-	path = external/markdown-mode
-	url = git://github.com/emacsmirror/markdown-mode.git
-[submodule "external/magithub"]
-	path = external/magithub
-	url = git://github.com/nex3/magithub.git
 [submodule "external/auto-complete"]
 	path = external/auto-complete
 	url = git://github.com/auto-complete/auto-complete.git
-[submodule "external/smart-tab"]
-	path = external/smart-tab
-	url = git://github.com/genehack/smart-tab.git
 [submodule "external/emacs-slim"]
 	path = external/emacs-slim
 	url = git://github.com/slim-template/emacs-slim.git
-[submodule "external/maxframe.el"]
-	path = external/maxframe.el
-	url = git://github.com/rmm5t/maxframe.el.git
 [submodule "external/edts"]
 	path = external/edts
 	url = git://github.com/tjarvstrand/edts.git

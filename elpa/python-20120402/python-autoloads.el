@@ -3,7 +3,7 @@
 ;;; Code:
 
 
-;;;### (autoloads (python-mode) "python" "python.el" (21211 26282
+;;;### (autoloads (python-mode) "python" "python.el" (21269 27340
 ;;;;;;  0 0))
 ;;; Generated autoloads from python.el
 
@@ -22,7 +22,7 @@ if that value is non-nil.
 
 ;;;***
 
-;;;### (autoloads nil nil ("python-pkg.el") (21211 26282 112881 0))
+;;;### (autoloads nil nil ("python-pkg.el") (21269 27340 474320 0))
 
 ;;;***
 
