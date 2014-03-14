@@ -1,4 +1,3 @@
-(add-to-list 'load-path "~/.emacs.d/external/yasnippet")
 (add-to-list 'load-path "~/.emacs.d/external/edts")
 (add-to-list 'load-path "~/.emacs.d/external/auto-complete")
 (add-to-list 'load-path "~/.emacs.d/external/emacs-slim")
