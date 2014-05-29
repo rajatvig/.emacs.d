@@ -58,5 +58,6 @@
 (require 'auto-complete-config)
 (ac-config-default)
 (auto-complete-mode-maybe)
+(edit-server-start)
 
 (define-key yas-minor-mode-map (kbd "M-RET") 'yas-expand)
