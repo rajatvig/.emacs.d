@@ -27,13 +27,37 @@
 
 (define-abbrev-table 'completion-list-mode-abbrev-table '())
 
+(define-abbrev-table 'conf-colon-mode-abbrev-table '())
+
+(define-abbrev-table 'conf-javaprop-mode-abbrev-table '())
+
+(define-abbrev-table 'conf-ppd-mode-abbrev-table '())
+
+(define-abbrev-table 'conf-space-mode-abbrev-table '())
+
+(define-abbrev-table 'conf-unix-mode-abbrev-table '())
+
+(define-abbrev-table 'conf-windows-mode-abbrev-table '())
+
+(define-abbrev-table 'conf-xdefaults-mode-abbrev-table '())
+
 (define-abbrev-table 'css-mode-abbrev-table '())
 
 (define-abbrev-table 'diff-mode-abbrev-table '())
 
 (define-abbrev-table 'display-time-world-mode-abbrev-table '())
 
+(define-abbrev-table 'dot-eproject-mode-abbrev-table '())
+
 (define-abbrev-table 'dsssl-mode-abbrev-table '())
+
+(define-abbrev-table 'edts-debug-list-breakpoint-mode-abbrev-table '())
+
+(define-abbrev-table 'edts-debug-list-interpreted-mode-abbrev-table '())
+
+(define-abbrev-table 'edts-debug-list-processes-mode-abbrev-table '())
+
+(define-abbrev-table 'edts-debug-mode-abbrev-table '())
 
 (define-abbrev-table 'emacs-lisp-byte-code-mode-abbrev-table '())
 
@@ -42,6 +66,10 @@
 (define-abbrev-table 'ensime-connection-list-mode-abbrev-table '())
 
 (define-abbrev-table 'ensime-inf-mode-abbrev-table '())
+
+(define-abbrev-table 'ert-results-mode-abbrev-table '())
+
+(define-abbrev-table 'ert-simple-view-mode-abbrev-table '())
 
 (define-abbrev-table 'eshell-mode-abbrev-table '())
 
@@ -57,11 +85,19 @@
 
 (define-abbrev-table 'grep-mode-abbrev-table '())
 
+(define-abbrev-table 'groovy-mode-abbrev-table
+  '(
+   ))
+
 (define-abbrev-table 'gud-mode-abbrev-table '())
 
 (define-abbrev-table 'haml-mode-abbrev-table '())
 
 (define-abbrev-table 'haskell-cabal-mode-abbrev-table '())
+
+(define-abbrev-table 'haskell-compilation-mode-abbrev-table '())
+
+(define-abbrev-table 'haskell-menu-mode-abbrev-table '())
 
 (define-abbrev-table 'haskell-mode-abbrev-table '())
 
@@ -74,6 +110,8 @@
 (define-abbrev-table 'inferior-haskell-mode-abbrev-table '())
 
 (define-abbrev-table 'inferior-lisp-mode-abbrev-table '())
+
+(define-abbrev-table 'inferior-python-mode-abbrev-table '())
 
 (define-abbrev-table 'java-mode-abbrev-table
   '(
@@ -115,6 +153,8 @@
 
 (define-abbrev-table 'nrepl-connections-buffer-mode-abbrev-table '())
 
+(define-abbrev-table 'nxml-mode-abbrev-table '())
+
 (define-abbrev-table 'objc-mode-abbrev-table
   '(
    ))
@@ -138,6 +178,16 @@
 (define-abbrev-table 'prog-mode-abbrev-table '())
 
 (define-abbrev-table 'puppet-mode-abbrev-table '())
+
+(define-abbrev-table 'python-mode-abbrev-table
+  '(
+    ("class" "" python-skeleton-class 0)
+    ("def" "" python-skeleton-def 0)
+    ("for" "" python-skeleton-for 0)
+    ("if" "" python-skeleton-if 0)
+    ("try" "" python-skeleton-try 0)
+    ("while" "" python-skeleton-while 0)
+   ))
 
 (define-abbrev-table 'rspec-compilation-mode-abbrev-table '())
 
