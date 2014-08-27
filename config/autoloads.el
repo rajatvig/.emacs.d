@@ -2,7 +2,6 @@
 (add-to-list 'load-path "~/.emacs.d/external/auto-complete")
 (add-to-list 'load-path "~/.emacs.d/external/emacs-slim")
 (add-to-list 'load-path "~/.emacs.d/external/maxframe.el")
-(add-to-list 'load-path "~/.emacs.d/external/ensime/dist/elisp/")
 
 (add-to-list 'auto-mode-alist '("\\.js" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.erl" . erlang-mode))
@@ -22,7 +21,6 @@
 (require 'yasnippet)
 (require 'autopair)
 (require 'workgroups)
-(require 'ensime)
 (require 'edts-start)
 (require 'textmate)
 
