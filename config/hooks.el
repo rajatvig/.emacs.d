@@ -22,7 +22,7 @@
 
 (autopair-global-mode)
 
-(setq yas/snippet-dirs "~/.emacs.d/elpa/yasnippet-20140314.255/snippets")
+(setq yas/snippet-dirs "~/.emacs.d/elpa/yasnippet-20140821.38/snippets")
 
 (yas/load-directory yas/snippet-dirs)
 
@@ -33,8 +33,8 @@
 (require 'smart-tab)
 (global-smart-tab-mode 1)
 
-(require 'maxframe)
-(add-hook 'window-setup-hook 'maximize-frame t)
+;;(require 'maxframe)
+;;(add-hook 'window-setup-hook 'maximize-frame t)
 
 (windmove-default-keybindings)
 
@@ -54,10 +54,11 @@
 
 (global-hl-line-mode 1)
 
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/external/auto-complete/dict")
+;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/external/auto-complete/dict")
 (require 'auto-complete-config)
 (ac-config-default)
 (auto-complete-mode-maybe)
 (edit-server-start)
+(server-start)
 
 (define-key yas-minor-mode-map (kbd "M-RET") 'yas-expand)
