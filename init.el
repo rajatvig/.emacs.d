@@ -14,14 +14,6 @@
 
 (add-to-list 'load-path "~/.emacs.d/config")
 
-(package-initialize)
-
-(load "autoloads")
-(load "keys")
-(load "osx")
-(load "hooks")
-(load "rvm-help")
-(load "theme")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -53,10 +45,20 @@
  '(tab-stop-list (quote (2 4 6 8 10 12 14 16 18 20 22 24 26 28 30)))
  '(tab-width 2)
  '(tool-bar-mode nil)
- '(workgroups-mode t))
+ '(workgroups-mode t)
+ '(edts-inhibit-package-check t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 90 :width normal :foundry "apple" :family "Menlo")))))
+ '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 90 :width normal :foundry "apple" :family "Aurulent Sans Mono")))))
+
+(package-initialize)
+
+(load "autoloads")
+(load "keys")
+(load "osx")
+(load "hooks")
+(load "rvm-help")
+(load "theme")
