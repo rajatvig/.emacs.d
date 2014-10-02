@@ -22,7 +22,7 @@
 
 (autopair-global-mode)
 
-(setq yas/snippet-dirs "~/.emacs.d/elpa/yasnippet-20140922.1402/snippets")
+(setq yas/snippet-dirs "~/.emacs.d/elpa/yasnippet-20140929.240/snippets")
 
 (yas/load-directory yas/snippet-dirs)
 
@@ -35,6 +35,8 @@
 
 ;;(require 'maxframe)
 ;;(add-hook 'window-setup-hook 'maximize-frame t)
+
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 (windmove-default-keybindings)
 

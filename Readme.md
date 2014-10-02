@@ -1,6 +1,6 @@
 Custom Emacs 24 configuration.
 
-Mostly used under with Mac OS X and Linux. Use Consolas as the default Font.
+Mostly used under with Mac OS X and Linux. Use Aurulent Sans Mono as the default Font.
 
 To use
 
@@ -11,14 +11,11 @@ git submodule init
 git submodule update
 git submodule foreach git submodule init
 git submodule foreach git submodule update
-cd external\ensime
-sbt stage
+cd external\edts
+make
 cd ../..
 cd external\auto-complete
 make byte-compile
-cd ../..
-cd external\edts
-make
 cd ../..
 ```
 
