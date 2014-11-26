@@ -5,7 +5,7 @@
     (setq exec-path (split-string path-from-shell path-separator))))
 
 (when window-system (set-exec-path-from-shell-PATH))
-;;(push "/usr/local/bin" exec-path)
+;; (push "/usr/local/bin" exec-path)
 
 (require 'package)
 
@@ -19,6 +19,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(c-basic-offset 2)
+ '(column-number-mode t)
  '(custom-enabled-themes (quote (sanityinc-tomorrow-night)))
  '(custom-safe-themes
 	 (quote
@@ -56,6 +57,7 @@
  '(setq tab-width t)
  '(setq-default c-basic-offset)
  '(show-paren-mode t)
+ '(size-indication-mode t)
  '(standard-indent 2)
  '(tab-stop-list (quote (2 4 6 8 10 12 14 16 18 20 22 24 26 28 30)))
  '(tab-width 2)
@@ -66,9 +68,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 90 :width normal :foundry "apple" :family "Aurulent Sans Mono")))))
+ '(default ((t (:inherit nil :stipple nil :background "#242424" :foreground "#f6f3e8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 95 :width normal :foundry "apple" :family "Aurulent Sans Mono")))))
 
 (package-initialize)
+
+(add-to-list 'default-frame-alist '(font . "Aurulent Sans Mono-10"))
+(set-frame-font "-*-Aurulent Sans Mono-normal-normal-*-9")
 
 (load "autoloads")
 (load "keys")
