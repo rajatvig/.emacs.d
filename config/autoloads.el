@@ -1,8 +1,3 @@
-(add-to-list 'load-path "~/.emacs.d/external/edts")
-(add-to-list 'load-path "~/.emacs.d/external/auto-complete")
-(add-to-list 'load-path "~/.emacs.d/external/emacs-slim")
-(add-to-list 'load-path "~/.emacs.d/external/maxframe.el")
-
 (add-to-list 'auto-mode-alist '("\\.js" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.erl" . erlang-mode))
 (add-to-list 'auto-mode-alist '("\\.erb" . nxml-mode))
@@ -21,7 +16,6 @@
 (require 'yasnippet)
 (require 'autopair)
 (require 'workgroups)
-(require 'edts-start)
 (require 'textmate)
 
 (autoload 'puppet-mode "puppet-mode" "Major mode for editing puppet manifests")

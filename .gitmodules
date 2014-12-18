@@ -1,9 +1,0 @@
-[submodule "external/auto-complete"]
-	path = external/auto-complete
-	url = git://github.com/auto-complete/auto-complete.git
-[submodule "external/emacs-slim"]
-	path = external/emacs-slim
-	url = git://github.com/slim-template/emacs-slim.git
-[submodule "external/edts"]
-	path = external/edts
-	url = git://github.com/tjarvstrand/edts.git
