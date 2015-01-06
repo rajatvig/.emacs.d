@@ -98,3 +98,5 @@
 (load "osx")
 (load "hooks")
 (load "rvm-help")
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
