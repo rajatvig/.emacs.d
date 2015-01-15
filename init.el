@@ -90,8 +90,8 @@
 
 (package-initialize)
 
-(add-to-list 'default-frame-alist '(font . "Aurulent Sans Mono-10"))
-(set-frame-font "-*-Aurulent Sans Mono-normal-normal-*-9")
+(add-to-list 'default-frame-alist '(font . "Envy Code R-11"))
+(set-frame-font "-*-Envy Code R-normal-normal-*-10")
 
 (load "autoloads")
 (load "keys")
