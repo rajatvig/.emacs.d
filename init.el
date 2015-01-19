@@ -142,3 +142,14 @@
             flymake-err-line-patterns))
 (add-to-list 'flymake-allowed-file-name-masks
          '("\\.jade\\'" flymake-jade-init))
+(load "autoloads")
+(load "keys")
+(load "osx")
+(load "hooks")
+(load "rvm-help")
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+(load "theme")
+
+(load "server")
+(unless (server-running-p) (server-start))
