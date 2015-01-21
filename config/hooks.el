@@ -58,10 +58,15 @@
 
 ;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/external/auto-complete/dict")
 (require 'auto-complete-config)
+
 (ac-config-default)
 (auto-complete-mode-maybe)
 (edit-server-start)
-(server-start)
+
+(require 'server)
+(unless (server-running-p) (server-start))
+
+(setq make-backup-files nil)
 
 (define-key yas-minor-mode-map (kbd "M-RET") 'yas-expand)
 

@@ -19,9 +19,3 @@
 (require 'autopair)
 (require 'workgroups)
 (require 'textmate)
-(require 'sws-mode)
-(require 'jade-mode)
-(require 'stylus-mode)
-
-(autoload 'puppet-mode "puppet-mode" "Major mode for editing puppet manifests")
-(autoload 'yaml-mode "yaml-mode" "major mode for yaml")
