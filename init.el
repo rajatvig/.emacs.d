@@ -92,6 +92,7 @@
 
 (add-to-list 'default-frame-alist '(font . "Envy Code R-11"))
 (set-frame-font "-*-Envy Code R-normal-normal-*-10")
+(windmove-default-keybindings)
 
 (load "autoloads")
 (load "keys")
@@ -100,3 +101,5 @@
 (load "rvm-help")
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+(load "server")
+(unless (server-running-p) (server-start))
