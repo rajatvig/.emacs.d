@@ -12,11 +12,16 @@
 (add-to-list 'auto-mode-alist '("\.md$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\.sbt$" . scala-mode))
 (add-to-list 'auto-mode-alist '("\.gradle$" . groovy-mode))
+(add-to-list 'auto-mode-alist '("\\.styl$" . stylus-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
 (require 'yasnippet)
 (require 'autopair)
 (require 'workgroups)
 (require 'textmate)
+(require 'sws-mode)
+(require 'jade-mode)
+(require 'stylus-mode)
 
 (autoload 'puppet-mode "puppet-mode" "Major mode for editing puppet manifests")
 (autoload 'yaml-mode "yaml-mode" "major mode for yaml")

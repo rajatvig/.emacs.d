@@ -64,3 +64,12 @@
 (server-start)
 
 (define-key yas-minor-mode-map (kbd "M-RET") 'yas-expand)
+
+(defun flymake-jade-init ()
+  (let* ((temp-file (flymake-init-create-temp-buffer-copy
+                 'flymake-create-temp-intemp))
+     (local-file (file-relative-name
+                  temp-file
+                  (file-name-directory buffer-file-name)))
+     (arglist (list local-file)))
+    (list "jade" arglist)))
