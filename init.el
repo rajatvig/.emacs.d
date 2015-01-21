@@ -83,7 +83,7 @@
  '(workgroups-mode t))
 
 (setq org-startup-indented t)
-
+(windmove-default-keybindings)
 (set-default-font "Droid Sans Mono-9")
 
 (custom-set-faces
