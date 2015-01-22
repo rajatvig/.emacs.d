@@ -1,11 +1,5 @@
-(setenv "PATH" (concat "/usr/local/bin:/opt/local/bin:/usr/bin:/bin" (getenv "PATH")))
-
-(defconst user-home-directory
-  (or (getenv "HOME")
-      (expand-file-name ".." user-emacs-directory))
-  "The user's home directory.")
-
-(add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
+(setenv "PATH" (concat "/usr/local/bin" (getenv "PATH")))
+(setq exec-path (append exec-path '("/usr/local/bin")))
 
 (require 'package)
 
@@ -45,8 +39,9 @@
  '(js2-bounce-indent-p t)
  '(js2-cleanup-whitespace t)
  '(js2-indent-on-enter-key t)
- '(neo-click-changes-root t)
+ '(neo-click-changes-root nil)
  '(neo-show-hidden-files t)
+ '(neo-smart-open t)
  '(rspec-use-rvm t)
  '(ruby-comment-column 96)
  '(safe-local-variable-values
@@ -105,7 +100,7 @@
  '(neo-file-link-face ((t :inherit default)))
  '(neo-header-face ((t :inherit shadow)))
  '(neo-root-dir-face ((t :inherit link-visited :underline nil))))
- 
+
 (package-initialize)
 
 (add-to-list 'default-frame-alist '(font . "Envy Code R-11"))
