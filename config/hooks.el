@@ -1,5 +1,6 @@
+(add-hook 'after-init-hook 'global-company-mode)
+
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-(add-hook 'js2-mode-hook 'ac-js2-mode)
 
 ;; Paredit
 (add-hook 'clojure-mode-hook 'paredit-mode)
@@ -57,10 +58,10 @@
 (global-hl-line-mode 1)
 
 ;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/external/auto-complete/dict")
-(require 'auto-complete-config)
+;; (require 'auto-complete-config)
 
-(ac-config-default)
-(auto-complete-mode-maybe)
+;; (ac-config-default)
+;; (auto-complete-mode-maybe)
 (edit-server-start)
 
 (require 'server)
