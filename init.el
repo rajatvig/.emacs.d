@@ -111,3 +111,4 @@
 (load "keys")
 (load "osx")
 (load "hooks")
+(load "rbenv_load")
