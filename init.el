@@ -1,4 +1,4 @@
-(setenv "PATH" (concat "/usr/local/bin" (getenv "PATH")))
+(setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
 (setq exec-path (append exec-path '("/usr/local/bin")))
 
 (require 'package)
