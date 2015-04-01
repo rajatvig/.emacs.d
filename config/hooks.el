@@ -27,7 +27,7 @@
 
 (yas/load-directory yas/snippet-dirs)
 
-;;(yas/initialize)
+(yas/initialize)
 
 (yas/global-mode 1)
 
@@ -56,6 +56,11 @@
 (global-linum-mode 1)
 
 (global-hl-line-mode 1)
+
+(setq tab-width 2
+      indent-tabs-mode nil)
+
+(setq neo-theme 'ascii)
 
 ;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/external/auto-complete/dict")
 ;; (require 'auto-complete-config)

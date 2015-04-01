@@ -111,4 +111,3 @@
 (load "keys")
 (load "osx")
 (load "hooks")
-(load "rvm-help")

@@ -14,6 +14,7 @@
 (add-to-list 'auto-mode-alist '("\.gradle$" . groovy-mode))
 (add-to-list 'auto-mode-alist '("\\.styl$" . stylus-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+(add-to-list 'auto-mode-alist '("\\.fish$" . shell-script-mode))
 
 (require 'yasnippet)
 (require 'autopair)

@@ -82,8 +82,3 @@
 (global-set-key (kbd "C-x C-S-k") 'nuke-all-buffers)
 
 (global-set-key (kbd "C-c r") 'revert-buffer)
-
-(setq tab-width 2
-      indent-tabs-mode nil)
-
-(setq neo-theme 'ascii)
