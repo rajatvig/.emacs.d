@@ -15,8 +15,10 @@
 (add-to-list 'auto-mode-alist '("\\.styl$" . stylus-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 (add-to-list 'auto-mode-alist '("\\.fish$" . shell-script-mode))
+(add-to-list 'auto-mode-alist '("\\.textile\\'" . textile-mode))
 
 (require 'yasnippet)
 (require 'autopair)
 (require 'workgroups)
 (require 'textmate)
+(require 'textile-mode)
