@@ -9,3 +9,4 @@ elpa/archives/**
 eshell/**
 ac-comphist.dat
 **/erl_crash.dump
+projectile-bookmarks.eld
