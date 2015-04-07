@@ -107,8 +107,8 @@
 (set-frame-font "-*-Envy Code R-normal-normal-*-10")
 (windmove-default-keybindings)
 
+(load "hooks")
+(load "rbenv_load")
 (load "autoloads")
 (load "keys")
 (load "osx")
-(load "hooks")
-(load "rbenv_load")

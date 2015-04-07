@@ -27,7 +27,6 @@
       (if (eq (get-lru-window) (next-window))
           (window-buffer (previous-window)) (window-buffer (next-window)))))
 
-
 ;; Fix forward-delete on X11 on OS X
 (global-set-key [delete] 'delete-forward-char)
 
@@ -48,7 +47,15 @@
 (global-set-key (kbd "C-z") 'undo)
 
 (global-set-key (kbd "C-f") 'find-file)
-(global-set-key (kbd "C-t") 'find-file) ; Like TextMate
+(global-set-key (kbd "C-t") 'projectile-find-file) ; Like TextMate
+
+(define-key projectile-mode-map [?\s-d] 'projectile-find-dir)
+(define-key projectile-mode-map [?\s-p] 'projectile-switch-project)
+(define-key projectile-mode-map [?\s-f] 'projectile-find-file)
+(define-key projectile-mode-map [?\s-g] 'projectile-grep)
+(define-key projectile-mode-map [?\s-?] 'projectile-find-implementation-or-test-other-window)
+
+;; (define-key global-keymap (kbd "s-p") 'projectile-command-map)
 
 ;;; Fixes for Cocoa
 ;; Match X11 version
@@ -82,3 +89,5 @@
 (global-set-key (kbd "C-x C-S-k") 'nuke-all-buffers)
 
 (global-set-key (kbd "C-c r") 'revert-buffer)
+
+(global-set-key (kbd "C-S-s")  #'helm-ag)

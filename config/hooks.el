@@ -21,10 +21,21 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 ;;(add-hook 'write-file-hooks (lambda () (untabify (point-min) (point-max))))
 
+(require 'autopair)
 (autopair-global-mode)
 
-(setq yas/snippet-dirs "~/.emacs.d/elpa/yasnippet-20150405.1526/snippets/")
+(projectile-global-mode)
 
+(require 'helm-config)
+
+(helm-mode t)
+(helm-adaptative-mode t)
+
+(require 'helm-projectile)
+(helm-projectile-on)
+
+(require 'yasnippet)
+(setq yas/snippet-dirs "~/.emacs.d/elpa/yasnippet-20150405.1526/snippets/")
 (yas/load-directory yas/snippet-dirs)
 
 (yas/initialize)
@@ -52,6 +63,7 @@
 
 (setq inhibit-startup-message t)
 
+(require 'textmate)
 (textmate-mode)
 (global-linum-mode 1)
 
