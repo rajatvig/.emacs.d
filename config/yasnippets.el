@@ -1,0 +1,9 @@
+(require 'yasnippet)
+(setq yas/snippet-dirs "~/.emacs.d/elpa/yasnippet-20150405.1526/snippets/")
+(yas/load-directory yas/snippet-dirs)
+
+(yas/initialize)
+
+(yas/global-mode 1)
+
+(define-key yas-minor-mode-map (kbd "M-RET") 'yas-expand)

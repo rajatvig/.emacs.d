@@ -112,3 +112,4 @@
 (load "autoloads")
 (load "keys")
 (load "osx")
+(load "yasnippets")

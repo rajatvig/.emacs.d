@@ -35,14 +35,6 @@
 (require 'helm-projectile)
 (helm-projectile-on)
 
-(require 'yasnippet)
-(setq yas/snippet-dirs "~/.emacs.d/elpa/yasnippet-20150405.1526/snippets/")
-(yas/load-directory yas/snippet-dirs)
-
-(yas/initialize)
-
-;; (yas/global-mode 1)
-
 (require 'smart-tab)
 (global-smart-tab-mode 1)
 
@@ -86,8 +78,6 @@
 (unless (server-running-p) (server-start))
 
 (setq make-backup-files nil)
-
-(define-key yas-minor-mode-map (kbd "M-RET") 'yas-expand)
 
 (defun flymake-jade-init ()
   (let* ((temp-file (flymake-init-create-temp-buffer-copy
