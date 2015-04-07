@@ -30,6 +30,7 @@
 
 (helm-mode t)
 (helm-adaptative-mode t)
+(setq helm-adaptive-history (quote nil))
 
 (require 'helm-projectile)
 (helm-projectile-on)
@@ -40,7 +41,7 @@
 
 (yas/initialize)
 
-(yas/global-mode 1)
+;; (yas/global-mode 1)
 
 (require 'smart-tab)
 (global-smart-tab-mode 1)
