@@ -23,7 +23,7 @@
 
 (autopair-global-mode)
 
-(setq yas/snippet-dirs "~/.emacs.d/elpa/yasnippet-20150323.311/snippets/")
+(setq yas/snippet-dirs "~/.emacs.d/elpa/yasnippet-20150405.1526/snippets/")
 
 (yas/load-directory yas/snippet-dirs)
 
