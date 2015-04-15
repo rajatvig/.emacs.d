@@ -64,6 +64,7 @@
  '(tab-stop-list (quote (2 4 6 8 10 12 14 16 18 20 22 24 26 28 30)))
  '(tab-width 2)
  '(tool-bar-mode nil)
+ '(scroll-bar-mode nil)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
@@ -103,13 +104,4 @@
 
 (package-initialize)
 
-(add-to-list 'default-frame-alist '(font . "Envy Code R-11"))
-(set-frame-font "-*-Envy Code R-normal-normal-*-10")
-(windmove-default-keybindings)
-
-(load "hooks")
-(load "rbenv_load")
-(load "autoloads")
-(load "keys")
-(load "osx")
-(load "yasnippets")
+(load "config")

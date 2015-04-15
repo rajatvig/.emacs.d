@@ -1,0 +1,7 @@
+(add-to-list 'auto-mode-alist '("\\.erl" . erlang-mode))
+(add-to-list 'auto-mode-alist '("\\*.feature$", org-mode))
+(add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\.sbt$" . scala-mode))
+(add-to-list 'auto-mode-alist '("\.gradle$" . groovy-mode))
+(add-to-list 'auto-mode-alist '("\\.fish$" . shell-script-mode))

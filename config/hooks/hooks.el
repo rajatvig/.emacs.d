@@ -1,0 +1,32 @@
+(require 'helm-config)
+(require 'smart-tab)
+(require 'textmate)
+
+(add-hook 'after-init-hook 'global-company-mode)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(helm-mode t)
+(helm-adaptative-mode t)
+(setq helm-adaptive-history (quote nil))
+(setq helm-M-x-fuzzy-match t) ;; optional fuzzy matching for helm-M-x
+
+(textmate-mode)
+
+(global-smart-tab-mode 1)
+(global-linum-mode 1)
+(global-hl-line-mode 1)
+
+(line-number-mode t)
+(column-number-mode t)
+(size-indication-mode t)
+
+;; Don't ever make audible sounds.
+(setq visible-bell 't)
+
+;; Don't flash either
+(setq ring-bell-function 'ignore)
+
+(setq tab-width 2 indent-tabs-mode nil)
+(setq neo-theme 'ascii)
+(setq make-backup-files nil)
+(setq inhibit-startup-message t)

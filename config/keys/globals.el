@@ -1,5 +1,3 @@
-;;; Key remaps
-
 (when window-system
   ;; toggle menu-bar visibility
   (global-set-key (kbd "<f11>") 'scroll-bar-mode)
@@ -13,19 +11,6 @@
 ;; Font size
 (define-key global-map (kbd "s-+") 'text-scale-increase)
 (define-key global-map (kbd "s--") 'text-scale-decrease)
-
-;; f3 in minibuf inserts active buffer's filename
-;; http://stackoverflow.com/questions/455345/in-emacs-how-to-insert-file-name-in-shell-command
-(define-key minibuffer-local-map
-  [f3] (lambda () (interactive)
-       (insert (buffer-name (current-buffer-not-mini)))))
-
-(defun current-buffer-not-mini ()
-  "Return current-buffer if current buffer is not the *mini-buffer*
-  else return buffer before minibuf is activated."
-  (if (not (window-minibuffer-p)) (current-buffer)
-      (if (eq (get-lru-window) (next-window))
-          (window-buffer (previous-window)) (window-buffer (next-window)))))
 
 ;; Fix forward-delete on X11 on OS X
 (global-set-key [delete] 'delete-forward-char)
@@ -48,14 +33,7 @@
 
 (global-set-key (kbd "C-f") 'find-file)
 (global-set-key (kbd "C-t") 'projectile-find-file) ; Like TextMate
-
-(define-key projectile-mode-map [?\s-d] 'projectile-find-dir)
-(define-key projectile-mode-map [?\s-p] 'projectile-switch-project)
-(define-key projectile-mode-map [?\s-f] 'projectile-find-file)
-(define-key projectile-mode-map [?\s-g] 'projectile-grep)
-(define-key projectile-mode-map [?\s-?] 'projectile-find-implementation-or-test-other-window)
-
-;; (define-key global-keymap (kbd "s-p") 'projectile-command-map)
+(global-set-key (kbd "C-S-s")  #'helm-ag)
 
 ;;; Fixes for Cocoa
 ;; Match X11 version
@@ -68,11 +46,10 @@
 (global-set-key (kbd "<s-up>") 'beginning-of-buffer)
 (global-set-key (kbd "<s-down>") 'end-of-buffer)
 
-(put 'upcase-region 'disabled nil)
-(put 'downcase-region 'disabled nil)
-
 (global-set-key (kbd "M-]") 'next-buffer)
 (global-set-key (kbd "M-[") 'previous-buffer)
+
+(global-set-key (kbd "C-c r") 'revert-buffer)
 
 (defun kill-current-buffer ()
   "Kills the current buffer"
@@ -87,7 +64,3 @@
           (buffer-list))
   (delete-other-windows))
 (global-set-key (kbd "C-x C-S-k") 'nuke-all-buffers)
-
-(global-set-key (kbd "C-c r") 'revert-buffer)
-
-(global-set-key (kbd "C-S-s")  #'helm-ag)
