@@ -1,6 +1,7 @@
 (require 'helm-config)
 (require 'smart-tab)
 (require 'textmate)
+(require 'smex)
 
 (add-hook 'after-init-hook 'global-company-mode)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -30,3 +31,14 @@
 (setq neo-theme 'ascii)
 (setq make-backup-files nil)
 (setq inhibit-startup-message t)
+
+(ido-mode +1)
+(ido-ubiquitous-mode +1)
+
+;;; smarter fuzzy matching for ido
+(flx-ido-mode +1)
+
+;; disable ido faces to see flx highlights
+(setq ido-use-faces nil)
+
+(smex-initialize)
