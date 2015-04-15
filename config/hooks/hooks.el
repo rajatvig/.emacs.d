@@ -16,6 +16,8 @@
 (global-smart-tab-mode 1)
 (global-linum-mode 1)
 (global-hl-line-mode 1)
+(global-anzu-mode +1)
+(global-diff-hl-mode +1)
 
 (line-number-mode t)
 (column-number-mode t)
@@ -42,3 +44,5 @@
 (setq ido-use-faces nil)
 
 (smex-initialize)
+
+(fset 'yes-or-no-p 'y-or-n-p)
