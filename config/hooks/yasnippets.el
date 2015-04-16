@@ -7,4 +7,4 @@
 
 (yas/global-mode 1)
 
-(define-key yas-minor-mode-map (kbd "M-RET") 'yas-expand)
+(define-key yas-minor-mode-map (kbd "M-RET") 'helm-yas-complete)
