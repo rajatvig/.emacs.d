@@ -1,6 +1,7 @@
 (require 'yasnippet)
-(setq yas/snippet-dirs "~/.emacs.d/elpa/yasnippet-20150413.1403/snippets/")
-(yas/load-directory yas/snippet-dirs)
+
+(setq yas-snippet-dirs "~/.emacs.d/elpa/yasnippet-20150415.244/snippets/")
+(yas/load-directory yas-snippet-dirs)
 
 (yas/initialize)
 

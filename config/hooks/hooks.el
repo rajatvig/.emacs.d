@@ -5,6 +5,7 @@
 
 (add-hook 'after-init-hook 'global-company-mode)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-hook 'load-file 'idle-highlight-mode)
 
 (helm-mode t)
 (helm-adaptative-mode t)
