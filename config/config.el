@@ -21,3 +21,5 @@
 
 (load "keys/globals")
 (load "keys/keys")
+
+(color-theme-sanityinc-tomorrow-eighties)
