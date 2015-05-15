@@ -19,6 +19,7 @@
 (global-hl-line-mode 1)
 (global-anzu-mode +1)
 (global-diff-hl-mode +1)
+(global-aggressive-indent-mode 1)
 
 (line-number-mode t)
 (column-number-mode t)
@@ -47,3 +48,5 @@
 (smex-initialize)
 
 (fset 'yes-or-no-p 'y-or-n-p)
+
+(volatile-highlights-mode t)

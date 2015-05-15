@@ -1,7 +1,6 @@
-(setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
-(setq exec-path (append exec-path '("/usr/local/bin")))
-
 (require 'package)
+
+(exec-path-from-shell-initialize)
 
 ;; (add-to-list 'package-archives '("elpa" . "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
