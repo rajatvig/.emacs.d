@@ -49,4 +49,8 @@
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
+(require 'volatile-highlights)
 (volatile-highlights-mode t)
+
+(require 'auto-highlight-symbol)
+(global-auto-highlight-symbol-mode t)

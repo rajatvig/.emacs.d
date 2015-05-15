@@ -1,8 +1,5 @@
 (require 'package)
 
-(exec-path-from-shell-initialize)
-
-;; (add-to-list 'package-archives '("elpa" . "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 
 (add-to-list 'load-path "~/.emacs.d/config")
@@ -104,5 +101,7 @@
  '(neo-root-dir-face ((t :inherit link-visited :underline nil))))
 
 (package-initialize)
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 (load "config")
